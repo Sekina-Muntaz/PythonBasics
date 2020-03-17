@@ -71,6 +71,9 @@ print(myDictionary["username"])
 print(myDictionary["password"])
 print(myDictionary["gender"])
 
+myDictionary["username"]="Sekina"
+print(myDictionary)
+
 self={
     "firstname":"Sekina",
     "lastname":"Muntaz",
@@ -89,7 +92,23 @@ self={
     }
 }
 print(self["Schools"]["primarySchools"][1]["schoolName"])
+# Changing an item in a dictionary
+self["Schools"]["primarySchools"][1]["schoolName"]="St.Georges"
+print(self["Schools"]["primarySchools"][1])
+# Appending  items to a dictionary
+self["Schools"]["Secondary"]={
+"schoolName":"little prince",
+                "population":600,
+                "headteacher":"Keren"
+}
+print(self["Schools"])
+# Looping over a dictionary
+for primary in self["Schools"]["primarySchools"]:
+    print(primary)
 
+# x=self.keys()
+# x=list(x)
+# print(self[x[2]])
 
 # get users input from a console
 
