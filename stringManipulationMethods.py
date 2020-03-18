@@ -24,4 +24,9 @@ fruit=input("What is your favorite fruit")
 print(f"My name is:{name}{lname}")
 print(f"My favourite fruit is:{fruit}")
 
+# .format
+days=24
+event="Birthdays are on {}".format(days)
+print(event)
+
 
